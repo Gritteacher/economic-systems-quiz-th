@@ -9,13 +9,12 @@
     />
     <title>คลังคำถามระบบเศรษฐกิจ</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./app.js" defer></script>
+    <script type="module" src="./home.js" defer></script>
   </head>
   <body>
     <main class="app-shell">
       <section class="masthead" aria-labelledby="page-title">
         <div class="masthead-copy">
-          <p class="eyebrow">120 คำถามภาษาไทย</p>
           <h1 id="page-title">ระบบเศรษฐกิจและอุดมการณ์</h1>
         </div>
         <img
@@ -25,40 +24,11 @@
         />
       </section>
 
-      <section class="quiz-layout" aria-label="เครื่องมือสุ่มคำถาม">
-        <nav class="category-panel" aria-label="หมวดคำถาม">
-          <h2>หมวดคำถาม</h2>
-          <div id="category-list" class="category-list"></div>
-        </nav>
-
-        <section class="quiz-stage" aria-live="polite">
-          <div class="quiz-meta">
-            <span id="active-category" class="active-category"></span>
-            <span id="question-count" class="question-count"></span>
-          </div>
-
-          <article class="question-card">
-            <p id="question-text" class="question-text"></p>
-            <div id="answer-panel" class="answer-panel" hidden>
-              <h2>เฉลย</h2>
-              <p id="answer-text"></p>
-            </div>
-          </article>
-
-          <div class="actions">
-            <button id="reveal-answer" class="button button-secondary" type="button">
-              <span aria-hidden="true">?</span>
-              เฉลย
-            </button>
-            <button id="next-question" class="button button-primary" type="button">
-              <span aria-hidden="true">+</span>
-              สุ่มคำถาม
-            </button>
-            <button id="reset-cycle" class="icon-button" type="button" aria-label="เริ่มชุดคำถามของหมวดนี้ใหม่">
-              <span aria-hidden="true">↻</span>
-            </button>
-          </div>
-        </section>
+      <section class="category-page" aria-labelledby="category-title">
+        <div class="section-heading">
+          <h2 id="category-title">หมวดคำถาม</h2>
+        </div>
+        <div id="category-list" class="category-grid"></div>
       </section>
     </main>
   </body>
