@@ -83,6 +83,13 @@ h1 {
   letter-spacing: 0;
 }
 
+.site-credit {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: clamp(0.98rem, 2vw, 1.12rem);
+  font-weight: 750;
+}
+
 .masthead-image {
   display: block;
   width: 100%;
@@ -255,6 +262,12 @@ h1 {
   background: var(--surface);
   color: var(--charcoal);
   font-weight: 800;
+}
+
+.quiz-credit {
+  flex: 1;
+  margin: 0;
+  text-align: center;
 }
 
 .quiz-meta {
@@ -442,6 +455,10 @@ h1 {
   .quiz-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .quiz-credit {
+    text-align: left;
   }
 
   .actions {
