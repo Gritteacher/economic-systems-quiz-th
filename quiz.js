@@ -19,7 +19,7 @@ const revealButton = document.querySelector("#reveal-answer");
 const nextButton = document.querySelector("#next-question");
 const resetButton = document.querySelector("#reset-cycle");
 
-document.title = `${category.name} | คำถามระบบเศรษฐกิจ`;
+document.title = `${category.name} | ระบบเศรษฐกิจ`;
 document.documentElement.style.setProperty("--active-accent", category.accent);
 
 function shuffle(values) {
