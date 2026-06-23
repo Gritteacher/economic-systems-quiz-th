@@ -91,6 +91,14 @@ h1 {
   font-weight: 750;
 }
 
+.site-credit p {
+  margin: 0;
+}
+
+.site-credit p + p {
+  margin-top: 4px;
+}
+
 .masthead-image {
   display: block;
   width: 100%;
